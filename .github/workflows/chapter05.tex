@@ -1,0 +1,519 @@
+\chapter{Coupling Space and Time}
+
+Chapter 2 showed that spiral geometry solves the spatial side of minimum-action motion.
+Chapter 3 now shows how that same geometry locks space to time by tying a spiral’s amplitude, frequency, and pitch together.
+The result: RCM derives relativistic time-dilation and gravitational red-shift from nothing more than nested oscillations and their memory kernels.
+%---------------------------------------------------------------
+\subsection{Amplitude–Frequency Relations}
+
+Spiral geometry couples \emph{space} (captured by amplitude) and \emph{time} (captured by frequency).  Every resonance bundle that travels along a spiral obeys the constant‐product rule
+\begin{equation}
+  A(\vartheta)\,\omega(\vartheta)=K,
+  \tag{3.1}
+\end{equation}
+where
+\begin{itemize}
+  \item \(A(\vartheta)\)\,\(\equiv\) local radius (or envelope amplitude)
+  \item \(\omega(\vartheta)\)\,\(\equiv\) local turn‐rate (cycles per unit time)
+  \item \(K\)\,\(\equiv\) invariant “action per turn” fixed when the bundle is formed
+\end{itemize}
+
+\medskip
+\subsubsection{Deriving the Constant‐Product Law}
+
+\begin{enumerate}
+  \item \textbf{Geometry.} A small azimuthal step \(d\vartheta\) advances arclength  
+    \(\displaystyle ds = \sqrt{r^{2} + \bigl(dr/d\vartheta\bigr)^{2}}\,d\vartheta.\)
+  \item \textbf{Least action.} Minimising the integral of kinetic energy under fixed pitch forces the ratio \(ds/r\) to be constant; hence the tangential speed satisfies \(v\,r=\mathrm{const}.\)
+  \item \textbf{Frequency link.} Because \(v=r\,\dot\vartheta=2\pi r\,\omega,\) the constant product becomes \(2\pi\,A\,\omega.\) Renaming \(2\pi\to K\) yields (3.1).
+\end{enumerate}
+
+\medskip
+\subsubsection{Exchange (Differential) Lemma}
+
+Taking logarithms of (3.1) and differentiating with respect to \(\vartheta\),
+\begin{equation}
+  \frac{d\ln A}{d\vartheta} + \frac{d\ln\omega}{d\vartheta} = 0
+  \quad\Longrightarrow\quad
+  \frac{d\omega}{d\vartheta} = -\,\omega\,p(\vartheta),
+  \tag{3.2}
+\end{equation}
+where \(p(\vartheta)=\frac{1}{r}\frac{dr}{d\vartheta}\) is the spiral pitch.  Equation (3.2) says: \emph{increase pitch \(\to\) frequency must fall; decrease pitch \(\to\) frequency rises}. Pitch thus acts like a “gear” exchanging spatial stretch for temporal squeeze.
+
+\medskip
+\subsubsection{Scaling Laws for Specific Spiral Families}
+
+\begin{table}[H]
+  \small
+  \centering
+  \caption{Amplitude–Frequency Product for Spiral Families}
+  \label{tab:amp-freq-families}
+  \begin{tabular}{@{}p{0.18\textwidth} p{0.22\textwidth} p{0.22\textwidth} p{0.30\textwidth}@{}}
+    \toprule
+    \textbf{Spiral type}
+      & \(\mathbf{r(\vartheta)}\)
+      & \(\mathbf{p(\vartheta)}\)
+      & \(\mathbf{A(\vartheta)\,\omega(\vartheta)}\) \\
+    \midrule
+    Logarithmic
+      & \(a\,e^{b\vartheta}\)
+      & \(b\) (const)
+      & \(A\,\omega = K\) (constant) \\
+    Archimedean
+      & \(a + b\vartheta\)
+      & \(\tfrac{b}{a + b\vartheta}\)
+      & \(A\,\omega = K\bigl(1 + \tfrac{b}{a}\vartheta\bigr)\) \\
+    Power‐law
+      & \(a\,\vartheta^{n}\)
+      & \(\tfrac{n}{\vartheta}\)
+      & \(A\,\omega = K\bigl(\ln\vartheta\bigr)^{n}\) \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\medskip
+\subsubsection{Physical Fingerprints}
+
+\begin{itemize}
+  \item \textbf{Optical tweezers}—Increasing laser intensity (larger \(A\)) forces trapped particles to oscillate faster so that \(A\,\omega\) stays constant.
+  \item \textbf{Gravitational ring‐down}—As strain \(A\) decays, mode frequency \(\omega\) chirps downward to preserve the product \(K\).
+  \item \textbf{Respiratory sinus arrhythmia}—Chest expansion (larger \(A\)) accompanies faster heart‐rate (higher \(\omega\)); exhalation does the reverse.
+\end{itemize}
+
+\medskip
+\subsubsection{Conceptual Significance}
+
+Equation (3.1) is RCM’s \emph{equation of state}.  It says \emph{geometry and rhythm cannot vary independently}: compressing local space (higher amplitude) necessarily stretches local time (lower frequency).  In later sections:
+\begin{itemize}
+  \item (3.2) combines (3.1) with curvature to give the lower‐frequency coherence floor.
+  \item (3.3) yields an upper limit when noise places a minimum on amplitude.
+  \item Section 3.4 turns the product law into an oscillatory line element that reproduces relativistic time dilation and red‐shift.
+\end{itemize}
+
+Together, these results show that the familiar space–time metric of relativity emerges from nothing more than nested spirals obeying a constant action per turn.
+
+\section{The Minimum Coherence Frequency}
+%---------------------------------------------------------------
+\begin{quotation}
+\noindent\textit{“How slow can a rhythm be and still stay in tune with its own geometry?”}
+\end{quotation}
+
+In the Resonance Continuum Model (\RCM{}) a \emph{coherent} resonance bundle is one that keeps its phase locked long enough to store and trade energy without leaking it as noise.  
+The \textbf{minimum coherence frequency}, written \(\nu_{\min}\), marks the bottom edge of that safe zone: oscillate any slower and the bundle unravels into decoherence.
+
+%---------------------------------------------------------------
+\section{Geometric origin}
+%---------------------------------------------------------------
+Recall the pitch function
+\[
+  p(\theta)=\frac{d\!\ln r}{d\theta}.
+\]
+With angular speed \(\dot\theta=d\theta/dt\) we previously found
+\[
+  \nu(\theta)\,A(\theta)
+    =\frac{A(\theta)}{2\pi}\,\dot\theta .
+\]
+Phase slippage begins when the \emph{centripetal “memory tension”} stored in a turn—the geometric analogue of a restoring force—falls below environmental perturbations.  
+In \RCM{} that tension is proportional to the logarithmic slope \(\lvert p(\theta)\rvert\).  
+Writing “memory tension \(\ge\) perturbation” yields
+\[
+  \nu(\theta)\,A(\theta)\,\bigl|p(\theta)\bigr|
+    \;\ge\;\kappa\,\sigma ,
+\]
+where \(\sigma\) is the characteristic noise amplitude (thermal, vacuum, background) and \(\kappa\sim1\) is an empirical stability factor.  
+Solving for the limiting frequency gives
+\[
+  \boxed{%
+    \nu_{\min}(\theta)=\frac{\kappa\,\sigma}
+                           {A(\theta)\,\bigl|p(\theta)\bigr|}}
+\]  % close \boxed{…}  ↑↑   and then close display math
+
+\emph{Interpretation}: larger radius \emph{or} shallower pitch means lower tension, hence a higher frequency is required to maintain coherence.
+
+%---------------------------------------------------------------
+\subsection{Plug-in values for familiar spirals}
+%---------------------------------------------------------------
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}lcl@{}}
+\toprule
+\textbf{Spiral subclass} & $p(\theta)$ & $\nu_{\min}(\theta)$ trend\\
+\midrule
+Logarithmic, $r = a e^{b\theta}$ & $p = b$ &
+  $\displaystyle \nu_{\min}\propto \frac{\sigma}{A b}\;(\text{falls as }1/r)$\\
+Archimedean, $r = a + b\theta$ & $p = 1/r$ &
+  $\displaystyle \nu_{\min}\propto \sigma\;(\text{independent of }r)$\\
+Power-law, $r = a \theta^{k}$ & $p = k/\theta$ &
+  $\displaystyle \nu_{\min}\propto \frac{\sigma\,\theta}{A k}\;(\text{log-like rise})$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+%---------------------------------------------------------------
+\subsection{Physical touchstones}
+%---------------------------------------------------------------
+\begin{itemize}
+  \item \textbf{Optical cavities}: A Fabry–Pérot resonator of length \(A\) and round-trip loss \(\sigma\) must keep its fundamental above \(\nu_{\min}=\sigma/(A b)\); fall below and the cavity stops building power.
+  \item \textbf{Planetary rings}: Shepherd moons impose a shallow Archimedean-like spiral; their libration frequency sits just above \(\nu_{\min}\), preventing ring material from diffusing.
+  \item \textbf{Theta–gamma neural coupling}: Theta waves (\(\sim6\) Hz) hover near the hippocampal \(\nu_{\min}\); faster gamma (> 30 Hz) rides well above, acting as a carrier that keeps memory packets phase-locked.
+\end{itemize}
+
+%---------------------------------------------------------------
+\subsection{Why \(\nu_{\min}\) matters going forward}
+%---------------------------------------------------------------
+\begin{itemize}
+  \item It sets the \emph{cut-off in the RCM dispersion equation}, separating long-memory coherent dynamics from decohering noise.
+  \item It determines how resonance-derived constants (Planck’s \(h\), fine-structure \(\alpha\), gravitational \(G\)) shift when pitch or ambient noise change.
+  \item Subsequent chapters use \(\nu_{\min}\) to design \textbf{frequency-specific therapies}, locate \textbf{critical transition points} in cascades, and predict when a gravitational-wave echo fades below detectability.
+\end{itemize}
+
+\medskip
+\noindent\textbf{Rule of thumb}: \emph{big, loose spirals demand faster beats to stay together; tight, steep spirals can hum along slowly and still cohere}.  
+The boxed equation above quantifies that exchange between geometry, noise, and time.
+
+
+%--------------------------------------------------------------------
+%  Section: Minimum–Resonance–Frequency Criteria
+%--------------------------------------------------------------------
+\section{Minimum–Resonance–Frequency Criteria}
+\label{sec:min-res-freq}
+
+\noindent
+\emph{How slow can a rhythm be and still fit onto its own spiral path?}
+
+\smallskip
+In the Resonance Continuum Model (RCM) a resonance bundle remains \emph{coherent}
+only if it can support at least one standing wave on the geometry it inhabits.
+For a spiral trajectory this sets a \textbf{minimum resonance frequency},
+$\nu_{\text{res,min}}$, below which no stable mode exists.
+
+\subsection{Minimum‐Coherence Frequency (\(\omega_c\))}
+
+Section 2.2 showed that each spiral’s \textbf{curvature} places a \emph{lower} bound on the rotation rate it can sustain without falling apart.  Here we derive that bound rigorously, connect it to the amplitude–frequency product \(A\omega=K\), and give concrete numbers for typical physical systems.
+
+\medskip
+\subsubsection{Curvature as an Effective Centrifugal Field}
+
+For a bundle element of mass density \(\rho\) moving at tangential speed \(v\) along a curve of curvature \(\kappa(\vartheta)\),
+\[
+  F_{\mathrm{cent}} = \rho\,v^{2}\,\kappa
+  \quad,\quad
+  F_{\mathrm{mem}} = \rho\,\omega^{2}\,A.
+\]
+Equilibrium \(F_{\mathrm{mem}}\ge F_{\mathrm{cent}}\) gives
+\[
+  \rho\,\omega^{2}A \;\ge\; \rho\,v^{2}\kappa
+  \;\Longrightarrow\;
+  \omega^{2}A \;\ge\;\bigl(A\omega\bigr)^{2}\kappa
+  \;\Longrightarrow\;
+  \boxed{\;\omega \;\ge\;\kappa\,K\;}\quad\bigl(K=A\omega\bigr),
+  \tag{3.3}
+\]
+so curvature sets a minimum frequency,
+\[
+  \boxed{\;\omega_{\min}(\vartheta) = K\,\kappa(\vartheta)\;}.
+  \tag{3.4}
+\]
+
+\medskip
+\subsubsection{Applying (3.4) to Each Spiral Family}
+
+\begin{table}[H]
+  \small
+  \centering
+  \caption{Minimum‐Coherence Frequency for Spiral Families}
+  \label{tab:coherence-frequencies}
+  \begin{tabular}{@{}p{0.23\textwidth} p{0.32\textwidth} p{0.30\textwidth} p{0.15\textwidth}@{}}
+    \toprule
+    \textbf{Spiral} & \(\kappa(\vartheta)\) & \(\omega_{\min}(\vartheta)=K\,\kappa\) & \textbf{Physical reading} \\
+    \midrule
+    Logarithmic \(r=a e^{b\vartheta}\) 
+      & \(\tfrac{b}{\sqrt{1+b^{2}}}\,e^{-b\vartheta}\) 
+      & \(K\,\tfrac{b}{\sqrt{1+b^{2}}}\,e^{-b\vartheta}\) 
+      & Noise‐limited coherence \\
+    Archimedean \(r=a+b\vartheta\) 
+      & \(\tfrac{a+2b\vartheta}{(a+b\vartheta)^{3}}\) 
+      & \(K\,\tfrac{a+2b\vartheta}{(a+b\vartheta)^{3}}\) 
+      & Finite non‐zero floor \\
+    Power‐law \(r=a\,\vartheta^{n}\) 
+      & \(\propto \vartheta^{-(n+1)}\) 
+      & \(K\,C_{n}\,\vartheta^{-(n+1)}\) 
+      & Tunable by exponent \(n\) \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\medskip
+
+\paragraph{Numerical example.}  
+Take a micron‐scale optical vortex (logarithmic, \(b\approx1\)) with 
+\(K=10^{6}\,\mathrm{rad\,s}^{-1}\,\mu\mathrm{m}\).  At \(\vartheta=5\) (radius \(\approx150\,\mu\mathrm{m}\)),
+\[
+  \omega_{\min}\approx K\,\frac{b}{\sqrt{2}}\,e^{-5}
+  \;\approx\;5.4\times10^{3}\,\mathrm{rad\,s}^{-1}.
+\]
+Below \(\sim0.9\,\mathrm{kHz}\) the vortex decoheres—even in an ideal vacuum—because curvature can no longer hold the wavefront together.
+
+\medskip
+\subsubsection{Coherence Length and Quality Factor}
+
+Define the \emph{coherence length} \(L_c\) as the distance along the spiral where \(\omega\) drops to \(\omega_{\min}\).  For a logarithmic spiral,
+\[
+  \omega(\vartheta)=\frac{K}{A}=K\,e^{-b\vartheta},
+  \quad
+  \omega_{\min}=K\,\kappa_{0}\,e^{-b\vartheta}.
+\]
+Setting \(\omega=\omega_{\min}\) gives
+\[
+  e^{-b\vartheta_c}=\kappa_{0},
+  \quad
+  \vartheta_c=\frac{1}{b}\ln\!\bigl(1/\kappa_{0}\bigr).
+\]
+The arclength \(s_c=r\,\vartheta_c\) yields a quality factor \(Q\approx\omega\,\tau\) with \(\tau=s_c/v\).  Thus \(Q\) scales logarithmically with inverse curvature—tight spirals have intrinsically higher quality.
+
+\medskip
+\subsubsection{Physical Consequences}
+
+\begin{itemize}
+  \item \textbf{Laser cavities} – The curvature floor fixes the lowest longitudinal mode; engineer \(b\) or disc radius \(R\) to target THz vs.\ GHz.
+  \item \textbf{Brain rhythms} – Scroll‐wave curvature in cortex dictates the slowest theta that can remain phase‐locked to local gamma.
+  \item \textbf{Astrophysical discs} – Spiral‐arm curvature predicts the minimum pattern speed for density waves before arm coherence breaks.
+\end{itemize}
+
+\medskip
+\paragraph{Key takeaway.}  
+Equation (3.4) sets a \emph{geometric lower bound} on resonance frequency.  Combined with the noise‐floor upper bound (Sec.\ 3.3), every spiral lives inside a finite window \([\omega_{\min},\omega_{\max}]\).  Outside that window, coherence unravels—either too slow to support curvature, or too fast for the available amplitude.
+
+*(Section 3.3 will flip the coin: how amplitude noise imposes \(\omega_{\max}\) and how the two bounds meet to define a spiral’s usable bandwidth.)*  
+
+%-------------------------------------------------------------------
+\subsection{Maximum‐Coherence Frequency (\(\omega_{\max}\))}
+
+\medskip
+
+The lower limit \(\omega_{\min}\) arises from geometry: a spiral must spin fast enough to resist its own curvature.  The upper limit comes from the opposite side of Equation (3.1),
+\[
+  A\,\omega = K,
+  \tag{3.1}
+\]
+because every real medium sets a noise floor \(A_{\mathrm{noise}}\).  Once the required amplitude drops below that floor, phase information drowns in fluctuations and coherence is lost.  Define
+\[
+  \omega_{\max}(\vartheta)
+  = \frac{K}{A_{\mathrm{noise}}(\vartheta)}.
+  \tag{3.5}
+\]
+
+\medskip
+\subsubsection{Estimating the Noise Floor}
+
+Noise sources depend on scale:
+
+\begin{table}[H]
+  \small
+  \centering
+  \caption{Noise Floors Across Physical Regimes}
+  \label{tab:noise-floors}
+  \begin{tabular}{@{}p{0.25\textwidth} p{0.35\textwidth} p{0.35\textwidth}@{}}
+    \toprule
+    \textbf{Regime} & \textbf{Dominant Fluctuation} & \textbf{Heuristic Amplitude Floor} \\
+    \midrule
+    Quantum (photons, electrons)
+      & Zero-point field
+      & \(A_{\mathrm{noise}}\sim \hbar/(\rho\,c)\) \\
+    Mesoscopic (neural tissue)
+      & Thermal, ionic
+      & \(A_{\mathrm{noise}}\sim 2 k_{B}T/\rho\) \\
+    Macroscopic (atmosphere, ocean)
+      & Turbulent eddies
+      & \(A_{\mathrm{noise}}\sim u_{\mathrm{rms}}/\omega_{\mathrm{eddy}}\) \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+A simple, scale‐free model capturing this trend is
+\[
+  A_{\mathrm{noise}}(\vartheta)
+  = A_{0}\,\kappa(\vartheta)^{-1/2},
+  \tag{3.6}
+\]
+with \(A_{0}\) set by the medium’s constants (e.g.\ \(A_{0}=\hbar/(\rho\,c)\) for light).
+
+\medskip
+\subsubsection{\(\omega_{\max}\) for Each Spiral Family}
+
+\begin{table}[H]
+  \small
+  \centering
+  \caption{\(\omega_{\max}\) Scaling for Spiral Families}
+  \label{tab:omega-max-scaling}
+  \begin{tabular}{@{}p{0.25\textwidth} p{0.25\textwidth} p{0.25\textwidth} p{0.25\textwidth}@{}}
+    \toprule
+    \textbf{Spiral}
+      & \(\kappa(\vartheta)\)
+      & \(A_{\mathrm{noise}}\propto\kappa^{-1/2}\)
+      & \(\omega_{\max}=K/A_{\mathrm{noise}}\) \\
+    \midrule
+    Logarithmic
+      & \(\kappa=\kappa_{0}e^{-b\vartheta}\)
+      & \(\propto e^{\,b\vartheta/2}\)
+      & \(\propto K\,e^{-b\vartheta/2}\) \\
+    Archimedean
+      & \(\kappa\propto \tfrac{a+2b\vartheta}{(a+b\vartheta)^{3}}\)
+      & \(\propto(a+b\vartheta)^{3/2}\)
+      & \(\propto K/(a+b\vartheta)^{3/2}\) \\
+    Power‐law
+      & \(\kappa\propto\vartheta^{-(n+1)}\)
+      & \(\propto\vartheta^{(n+1)/2}\)
+      & \(\propto K\,\vartheta^{-(n+1)/2}\) \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\medskip
+\subsubsection{Example Numbers}
+
+Photon vortex (\(\lambda=532\,\mathrm{nm},\,A_{0}\approx10^{-12}\,\mathrm{m}\)).  Logarithmic pitch \(b\approx1\); at radius \(r\approx100\lambda\) (\(\approx50\,\mu\mathrm{m}\)),
+\[
+  \omega_{\max}
+  \approx \frac{2\pi c}{\lambda}\,e^{-b\vartheta/2}
+  \approx 3.5\times10^{15}\,\mathrm{rad\,s}^{-1}\,e^{-5/2}
+  \approx3\times10^{14}\,\mathrm{rad\,s}^{-1}.
+\]
+Neural scroll wave (Archimedean, \(a=0.2\,\mathrm{mm},\,b=0.5\,\mathrm{mm}\)).  At \(R=10\,\mathrm{mm}\),
+\[
+  \omega_{\max}\approx \frac{K}{(a+b\vartheta)^{3/2}}
+  \sim200\,\mathrm{Hz},
+\]
+consistent with the observed gamma ceiling (\(\sim150\text{–}200\,\mathrm{Hz}\)) in cortex.
+
+\medskip
+\subsubsection{Bandwidth and Quality Factor}
+
+The usable band at \(\vartheta\) is
+\[
+  \omega_{\min}(\vartheta)\;\le\;\omega\;\le\;\omega_{\max}(\vartheta).
+\]
+Define the local quality factor
+\[
+  Q(\vartheta)
+  = \frac{\omega_{\max}-\omega_{\min}}{\omega_{\min}}.
+\]
+Logarithmic spirals achieve the largest \(Q\) because \(\omega_{\min}\) decays faster with \(\vartheta\) than \(\omega_{\max}\); Archimedean spirals have the smallest \(Q\).
+
+\medskip
+\subsubsection{Consequences Across Scales}
+
+\begin{itemize}
+  \item \textbf{Optical resonators} – Selecting a logarithmic index profile maximises bandwidth for supercontinuum generation; Archimedean mirrors limit linewidth for single‐mode lasers.
+  \item \textbf{Brain rhythms} – The gamma ceiling (\(\sim200\,\mathrm{Hz}\)) and theta floor (\(\sim4\,\mathrm{Hz}\)) define the \(\theta\)–\(\gamma\) coding window; altering cortical curvature (stroke, tumor) narrows this band.
+  \item \textbf{Planetary hurricanes} – Tight inner eyewall enforces high \(\omega_{\min}\); turbulent outer arms clamp \(\omega_{\max}\), explaining why storm rotation peaks at mid‐radius.
+\end{itemize}
+
+\medskip
+\paragraph{Key takeaway.}  
+The constant-product law plus a noise-limited amplitude imposes a hard upper cap on coherent rotation, complementing the curvature-limited \(\omega_{\min}\).  Together they carve out a finite resonance window whose width and position depend on spiral class, memory-kernel strength, and environmental noise—setting strict limits on everything from laser linewidths to cortical rhythm bandwidth and galactic density-wave speeds.
+
+*(Section 3.4 will build a full oscillatory line element using \(A(\theta)\) and \(\omega(\theta)\) and show how relativistic time-dilation emerges from pure resonance geometry.)*  
+
+%--------------------------------------------------------------------
+\subsection{Geometric quantization of a spiral}
+
+Let the spiral be written in polar form $r=r(\theta)$ and define the pitch
+function
+\[
+  p(\theta)\;=\;\frac{\mathrm d\!\ln r}{\mathrm d\theta}.
+\]
+For a reference radius $A=r(\theta_0)$ the arc–length of one full turn is
+\[
+  L(\theta_0)=
+  \!\!\int_{\theta_0}^{\theta_0+2\pi}
+  \sqrt{\,r^2+\bigl(\partial_\theta r\bigr)^2}\,\mathrm d\theta
+  \;\simeq\;2\pi\,A\,\sqrt{\,1+p^2(\theta_0)}.
+\]
+The longest wavelength that can wrap the loop once without phase
+cancellation is $\lambda_{\max}=L(\theta_0)$, so the
+\textbf{minimum resonance frequency} is
+\begin{equation}
+  \boxed{\;
+  \nu_{\text{res,min}}(\theta_0)=
+  \frac{c}{L(\theta_0)}=
+  \frac{c}{2\pi\,A\,\sqrt{\,1+p^2(\theta_0)}}\;
+  }.
+  \label{eq:nuresmin}
+\end{equation}
+
+\medskip
+\noindent
+\textit{Interpretation:} enlarging the radius or steepening the pitch
+(lengthens $L$) lowers the frequency floor; a tight, shallow spiral raises it.
+
+%--------------------------------------------------------------------
+\subsection{Pitch–specific consequences}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lcl@{}}
+\toprule
+\textbf{Spiral subclass} & $p(\theta)$ & Scaling of $\nu_{\text{res,min}}$ \\ 
+\midrule
+Logarithmic\;\;$r=a\,e^{b\theta}$     & $p=b$ (const.)        & $\nu_{\text{res,min}}\propto A^{-1}$ \\
+Archimedean\;\;$r=a+b\theta$          & $p=1/r$               & $\nu_{\text{res,min}}\propto A^{-1/2}$ \\
+Power--law\;\;$r=a\theta^{k}$         & $p=k/\theta$          & $\displaystyle
+  \nu_{\text{res,min}}\propto
+  \frac{1}{A\sqrt{1+(k/\theta)^2}}$ \\ 
+\bottomrule
+\end{tabular}
+\caption{Minimum resonance frequency implied by different spiral pitches.}
+\end{table}
+
+%--------------------------------------------------------------------
+\subsection{Physical fingerprints}
+
+\begin{itemize}
+\item \textbf{Optical cavities.}  A Fabry–Pérot resonator must operate
+      above the $\nu_{\text{res,min}}$ set by its vortex–like mode radius
+      $A$; otherwise power cannot build.
+
+\item \textbf{Planetary rings.}  Shepherd moons impose an Archimedean‐style
+      density spiral; the libration frequency of ring particles sits just
+      above the floor in Eq.\,\eqref{eq:nuresmin}, preventing diffusive
+      spreading.
+
+\item \textbf{Theta--gamma coupling.}  Hippocampal $\theta$ waves (\,$\sim6$ Hz)
+      lurk near $\nu_{\text{res,min}}$ of the neural spiral lattice, while
+      $\gamma$ rhythms (\,$>\!30$ Hz) ride comfortably above, acting as stable
+      carriers for memory packets.
+\end{itemize}
+
+%--------------------------------------------------------------------
+\subsection{Why the floor matters}
+
+Combining the coherence limit of Section~\ref{sec:coherence}
+($\nu\ge\nu_{\min}$) with the geometric bound
+($\nu\ge\nu_{\text{res,min}}$) gives the true operating window of any
+spiral–bound system.  In later chapters we will use
+Eq.\,\eqref{eq:nuresmin} to:
+\begin{equation}
+\label{eq:nuresmin}
+  \nu_{\text{res,min}}(\theta_0)=
+  \frac{c}{L(\theta_0)}=
+  \frac{c}{2\pi\,A\,\sqrt{\,1+p^2(\theta_0)}}.
+\end{equation}
+
+\begin{itemize}
+\item set bandwidth in the Resonant Processing Unit (RPU),
+\item locate transition points in cascade collapse models,
+\item predict when gravitational--wave echoes fade below detectability.
+\end{itemize}
+
+\bigskip
+\noindent
+\emph{Rule of thumb:} open the spiral and deeper notes appear, but
+phase--locking grows harder; tighten it and the beat must quicken, yet
+coherence is easier to keep.
+
+
+%=================================================================
+% PART II — MATHEMATICAL FORMALISM
+%=================================================================
+

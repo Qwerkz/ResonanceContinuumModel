@@ -1,0 +1,126 @@
+\documentclass[12pt,oneside]{book}
+
+
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing,arrows.meta}
+\usepackage[many]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{mdframed}
+\usepackage{etoolbox}
+
+% --- Page Style ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+\fancyhead[RE]{\nouppercase{\leftmark}}
+\pagecolor{blue!3}
+\setstretch{1.25}
+
+% --- Custom Macros ---
+\newenvironment{concept}
+  {\begin{tcolorbox}[colback=blue!5,colframe=blue!40,
+  title=\textbf{Conceptual Commentary},fonttitle=\bfseries]}
+  {\end{tcolorbox}}
+
+\newenvironment{styledexample}[1][Example]{
+  \begin{mdframed}[
+    backgroundcolor=gray!5,
+    roundcorner=5pt,
+    linewidth=1pt,
+    linecolor=gray!30,
+    innertopmargin=10pt,
+    innerbottommargin=10pt,
+    skipabove=10pt,
+    skipbelow=10pt
+  ]
+  \noindent\textbf{#1:}\par\vspace{0.5em}
+  \begin{itemize}[leftmargin=1.5em, label={}]
+    \renewcommand{\makelabel}[1]{\textbf{##1}\hspace{0.5em}}%
+}{%
+  % --- code executed at end of environment ---
+  \end{itemize}
+  \end{mdframed}
+}
+
+\newcommand{\add}[1]{\textcolor{red}{#1}}
+\newcommand{\del}[1]{\textcolor{gray}{\sout{#1}}}
+\newcommand{\RB}[1]{\mathsf{!}_{#1}} % resonance bundle symbol
+\newcommand{\RCM}{\textsc{RCM}}     % small caps RCM
+
+% --- Layout Tweaks ---
+\geometry{margin=0.75in}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+\setcounter{secnumdepth}{0}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue,
+  pdftitle={Resonance Continuum Model},
+  pdfauthor={Lisa Mathis}
+}
+
+\begin{document}
+
+\frontmatter 
+
+
+\title{\Huge \textbf{Resonance Continuum Model} \\
+       \Large A Comprehensive Theory of Coherent Reality}
+\author{\Large Lisa Rachelle Mathis}
+\date{July 27, 2025}
+\maketitle
+\clearpage
+
+\tableofcontents
+
+
+
+\clearpage
+
+\input{chapter01.tex}
+\input{chapter02.tex}
+\input{chapter03.tex}
+\input{chapter04.tex}
+\input{chapter05.tex}
+\input{chapter06.tex}
+\input{chapter07.tex}
+\input{chapter08.tex}
+\input{chapter09.tex}
+\input{chapter10.tex}
+\input{chapter11.tex}
+\input{chapter12.tex}
+\input{chapter13.tex}
+\input{chapter14.tex}
+\input{chapter15.tex}
+\input{chapter16.tex}
+\input{chapter17.tex}
+\input{chapter18.tex}
+\input{chapter19.tex}
+\input{chapter20.tex}
+\input{chapter21.tex}
+\input{chapter22.tex}
+
+\end{document}
